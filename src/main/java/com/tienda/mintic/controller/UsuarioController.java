@@ -74,7 +74,7 @@ public class UsuarioController {
 	
 	
 	
-	@DeleteMapping("/´{id}")
+	@DeleteMapping("/{id}")
 	public ResponseEntity<?> delete (@PathVariable(value = "id") Long usuarioId){
 		
 		if(!usuarioService.findById(usuarioId).isPresent()) {
